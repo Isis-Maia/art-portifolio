@@ -1,0 +1,44 @@
+@import url('https://fonts.cdnfonts.com/css/shelldon');
+@import url('https://fonts.cdnfonts.com/css/ghost-fantasy');
+
+@font-face {
+    font-family: Barbarjowe Pisanki;
+    src: url(' https://fonts.cdnfonts.com/css/barbarjowe-pisanie ');
+}
+
+
+* {
+    margin: 0cm;
+}
+
+.top {
+    color: #64a0b1;
+    font-family: 'Shelldon', sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+
+}
+
+.tit {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Ghost Fantasy', sans-serif;
+    color: #B8AEE6;
+    text-shadow: 3px 3px 1px #828aaf;
+    margin-top: 50px;
+}
+
+.fra {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: Barbarjowe Pisanki;
+}
+
+body {
+    background-color: #AEDAE6;
+}
