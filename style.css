@@ -98,7 +98,6 @@ p {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 3px;
     margin-right: 80px;
-   
 
 }
 
@@ -126,10 +125,10 @@ footer {
 
 .cont {
     position: relative;
-    width: 25%;
+    width: 22%;
     height: 1%;
-    margin-left: 250px;
-    margin-right: 50px;
+    margin-left: 140px;
+    margin-right: 20px;
     display: inline-block;
 }
 
@@ -168,7 +167,32 @@ footer {
     background-color: #B8AEE6;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
     text-align: center;
+    padding-left: 70px;
+
+}
+
+.txt > p {
+    font-size: 20px;
+}
+
+/* Tabela */
+
+table, th, td {
+    border: 1px solid black;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3d497c;
+
+}
+
+th, td {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
     
 }
