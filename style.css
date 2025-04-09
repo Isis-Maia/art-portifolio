@@ -99,10 +99,17 @@ p {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 60px;
     margin-right: 80px;
+
+
+}
+desc {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 60px;
+    margin-right: 80px;
     margin-top: 30px;
 
 }
-
 
 
 /* Footer */
@@ -149,7 +156,7 @@ footer {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -157,7 +164,7 @@ footer {
 }
 
 .cont:hover .imag {
-    opacity: 0.3;
+    opacity: 0.5;
     
 }
 
@@ -170,7 +177,7 @@ footer {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding-left: 70px;
+    padding-left: 40px;
 
 }
 
