@@ -12,17 +12,36 @@
 }
 
 body {
-    background-color: #AEDAE6;
+    background-image: url("Imagens/meus desenhos/paisagem-roxa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    
+}
+
+
+html, body {
+    height: 100%;
 }
 
 /* header */
 
 * {
     margin: 0cm;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .top {
-    color: #64a0b1;
+    color: #fdd302;
     font-family: 'Shelldon', sans-serif;
     font-size: 35px;
     padding-left: 20px;
@@ -49,32 +68,33 @@ body {
 }
 
 a.bot:visited {
-    color: #6e7cb9;
+    color: #000000;
 }
 
 a {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    color: #2c386c;
+    color: #b8d1f3;
     font-size: 30px;
     margin-bottom: 10px;
 }
-
-a:hover {
-    text-decoration: underline;
+.bot:hover {
+    background-color: #fdd302;
+    color: #69288c;
 }
 
 a:visited {
-    color: #4a65dd;
+    color: #fdd302;
 }
+
 
 /* Main */
 .tit {
     font-size: 100px;
     text-align: center;
     font-family: 'Ghost Fantasy', sans-serif;
-    color: #B8AEE6;
-    text-shadow: 3px 3px 1px #828aaf;
+    color: #fdd302;
+    text-shadow: 3px 3px 1px #ac910a;
     margin-top: 50px;
 }
 
@@ -92,8 +112,8 @@ h2 {
     margin-top: 45px;
     margin-left: 50px;
     font-family: 'Agbalumo', sans-serif;
-    color: #B8AEE6;
-    text-shadow: 3px 3px 1px #828aaf;
+    color: rgb(162, 72, 163);
+    text-shadow: 3px 3px 1px #69288c;
 }
 
 img {
@@ -102,19 +122,55 @@ img {
     border-radius: 40px;
 }
 
-#redes {
-    padding-bottom: 300px;
-    padding-top: 100px ;
+.perfil {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+    justify-content: left;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding-left: 100px;
 }
 
+.foto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fdd302;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#redes a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 7px 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#redes a:hover {
+    background-color: #69288c;
+    color: white;
+}
+
+
+
 .des {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-top: 80px;
     margin-left: 45px;
     margin-right: 45px;
     margin-bottom: 50px;
+    color: #000000;
 }
 
 p {
@@ -122,11 +178,15 @@ p {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 60px;
     margin-right: 80px;
-
+    color: #000000;
+    background-color: #c8bfe79f;
+    padding: 15px;
+    border-radius: 10px;
 
 }
+
 desc {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 60px;
     margin-right: 80px;
@@ -142,23 +202,26 @@ desc {
     padding-top: 40px;
     padding-bottom: 10px;
     text-align: center;
+    background-color: #68278b;
 }
 
 footer {
-    background-color: #B8AEE6;
+    background-color: #68278b;
     width: 100%;
     bottom: 0;
+    padding: 10px;
 
 }
 
 /* Tabela */
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #fdd302;
     margin-left: 55px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #3d497c;
+    color: #fdd302;
+    background-color: rgb(162, 72, 163);
 
 }
 

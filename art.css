@@ -12,17 +12,39 @@
 }
 
 body {
-    background-color: #AEDAE6;
+    background-image: url("Imagens/meus desenhos/paisagem-roxa.png");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+
+
 }
 
 /* header */
 
 * {
     margin: 0cm;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
+html, body {
+    height: 100%;
+}
+
+
 .top {
-    color: #64a0b1;
+    color: #fdd302;
     font-family: 'Shelldon', sans-serif;
     font-size: 35px;
     padding-left: 20px;
@@ -49,13 +71,13 @@ body {
 }
 
 a.bot:visited {
-    color: #6e7cb9;
+    color: #fdd302;
 }
 
 a {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    color: #2c386c;
+    color: #b8d1f3;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -65,7 +87,7 @@ a:hover {
 }
 
 a:visited {
-    color: #4a65dd;
+    color: #fdd302;
 }
 
 /* Main */
@@ -73,8 +95,8 @@ a:visited {
     font-size: 100px;
     text-align: center;
     font-family: 'Ghost Fantasy', sans-serif;
-    color: #B8AEE6;
-    text-shadow: 3px 3px 1px #828aaf;
+    color: #fdd302;
+    text-shadow: 3px 3px 1px #ac910a;
     margin-top: 50px;
 }
 
@@ -92,8 +114,8 @@ h2 {
     margin-top: 45px;
     margin-left: 50px;
     font-family: 'Agbalumo', sans-serif;
-    color: #B8AEE6;
-    text-shadow: 3px 3px 1px #828aaf;
+    color: rgb(162, 72, 163);
+    text-shadow: 3px 3px 1px #69288c;
 }
 
 img {
@@ -118,6 +140,7 @@ img {
     margin-left: 45px;
     margin-right: 45px;
     margin-bottom: 50px;
+    color: #000000;
 }
 
 p {
@@ -125,8 +148,14 @@ p {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 10px;
     margin-right: 10px;
+    color: #233346;
+    background-color: #c8bfe79f;
+    border-radius: 15px;
 
+}
 
+.sob {
+    background-color: #7091be;
 }
 
 .card:hover {
@@ -146,12 +175,12 @@ p {
 .card {
     width: 300px;
     margin: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 5px 8px #425672;
     border-radius: 8px;
     padding: 18px;
     padding-bottom: 10px;
-    color: #ffffffbe;
-    background-color: #828aaf;
+    color: #202d3e;
+    background-color: #7091be;
     min-height: 50px;
     
 }
@@ -171,9 +200,10 @@ p {
 }
 
 footer {
-    background-color: #B8AEE6;
+    background-color: #68278b;
     width: 100%;
     bottom: 0;
+    padding: 10px;
 
 }
 
