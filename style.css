@@ -22,17 +22,91 @@ body {
 }
 
 main {
-    flex: 1;
-    padding: 20px;
-    
+    background-color: #c8bfe7d0;
+    padding: 20px;       
+    border-radius: 10px; 
+    width: 90%;          
+    margin: 20px auto;  
+    box-shadow: 0 0 10px #68278b; 
 }
-
 
 html, body {
     height: 100%;
 }
 
+.foto-redonda {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-left:17px;
+}
+
+
 /* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #69288c;
+  z-index: 1000;
+}
+
+.menu-conteiner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.menu-conteiner .nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+.menu-conteiner .nav .nav-link {
+  font-size: 18px;
+  padding: 6px 10px;
+  color: #b8d1f3;
+  text-decoration: 2px solid rgb(162, 72, 163);;
+}
+
+.menu-conteiner .top {
+  margin: 0;
+  margin-left: 12px;
+  margin-right: 6px;
+  font-size: 28px;
+  color: #fdd302;
+  font-family: 'Shelldon', sans-serif;
+  white-space: nowrap;
+}
+
+main {
+  margin-top: 76px;
+}
+
+@media (max-width: 700px) {
+  .menu-conteiner .nav .nav-link {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+  .menu-conteiner .top {
+    font-size: 20px;
+  }
+  main { margin-top: 100px; } 
+}
+
+
 
 * {
     margin: 0cm;
@@ -44,31 +118,28 @@ html, body {
     color: #fdd302;
     font-family: 'Shelldon', sans-serif;
     font-size: 35px;
-    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 5px;
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 30px;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
 
 }
 
-    /* Botões */
 
-.men {
+.menu-conteiner .nav .nav-link.active {
+    color: #b8d1f3;
+    font-weight: normal;
+    border-bottom: none; 
+}
+
+.tit {
+    font-size: 70px;
     text-align: center;
-
-}
-
-.bot {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-a.bot:visited {
-    color: #000000;
+    font-family: 'Ghost Fantasy', sans-serif;
+    color: #fdd302;
+    text-shadow: 3px 3px 1px #ac910a;
+    margin-top: 50px;
 }
 
 a {
@@ -78,10 +149,6 @@ a {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.bot:hover {
-    background-color: #fdd302;
-    color: #69288c;
-}
 
 a:visited {
     color: #fdd302;
@@ -89,31 +156,12 @@ a:visited {
 
 
 /* Main */
-.tit {
-    font-size: 100px;
-    text-align: center;
-    font-family: 'Ghost Fantasy', sans-serif;
-    color: #fdd302;
-    text-shadow: 3px 3px 1px #ac910a;
-    margin-top: 50px;
-}
-
-.fra {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 80px;
-    font-family: Barbarjowe Pisanki;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 h2 {
     font-size: 55px;
     margin-top: 45px;
     margin-left: 50px;
     font-family: 'Agbalumo', sans-serif;
-    color: rgb(162, 72, 163);
-    text-shadow: 3px 3px 1px #69288c;
+    color: #69288c;
 }
 
 img {
@@ -179,7 +227,6 @@ p {
     margin-left: 60px;
     margin-right: 80px;
     color: #000000;
-    background-color: #c8bfe79f;
     padding: 15px;
     border-radius: 10px;
 
@@ -247,4 +294,61 @@ th, td {
     #sino {
         width: 90%; 
     }
+}
+
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 0;
+    height: 0;
+    background: rgb(162, 72, 163);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s, opacity .3s;
+    opacity: 0.4;
+}
+
+.nav-link:hover::before {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-link::after {
+    background: rgb(162, 72, 163);
+
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+ol {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 60px;
+    margin-right: 80px;
+    color: #000000;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container-caixas {
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  margin: 20px 0;
+}
+
+.caixa {
+  flex: 1; 
+  padding: 0.5px;
 }
