@@ -13,3 +13,20 @@ links.forEach(link => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    let currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
+
+

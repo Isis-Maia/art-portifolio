@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
     <link href="https://fonts.cdnfonts.com/css/barbarjowe-pisanie" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/shelldon" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/ghost-fantasy" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
                 
     <title>Portifolio</title>
 </head>
@@ -35,34 +37,33 @@
         
     </header>
     <main>
-        
-        <h1 class="tit">Galeria</h1>
-        <div class="linha-imagens">
-            <div class="linha-imagens">
-                <a href="fullart.html" class="card-link">
-                    <img src="Imagens/meus desenhos/Marta-fullart.png" alt="Marta Fullart">
-                    <span>Arte completa</span>
-                </a>
+        <h1 class="tit">Artes completas</h1>
 
-                <a href="marta-cores.html" class="card-link">
-                    <img src="Imagens/meus desenhos/Marta-coresbase.png" alt="Marta Cores Base">
-                    <span>Cores base</span>
-                </a>
+        <!-- GALERIA -->
+        <section class="galeria">
+            <a href="#marta-fullart" class="thumb">
+                <img src="Imagens/meus desenhos/Marta-fullart.png" alt="Marta Fullart">
+            </a>
+        </section>
 
-                <a href="marta-lineart.html" class="card-link">
-                    <img src="Imagens/meus desenhos/Marta-lineart.png" alt="Marta Lineart">
-                    <span>Lineart</span>
-                </a>
+        <!-- LIGHTBOX (FORA DA GALERIA) -->
+        <div id="marta-fullart" class="lightbox">
+            <a href="#" class="overlay"></a>
 
-                <a href="melody.html" class="card-link">
-                    <img src="Imagens/meus desenhos/Melody-cinzas.png" alt="Melody Cinzas">
-                    <span>Escala de cinzas</span>
-                </a>
+            <div class="conteudo-lightbox">
+                <a href="#" class="fechar">×</a>
+
+                <img src="Imagens/meus desenhos/Marta-fullart.png" alt="Marta Fullart">
+
+                <div class="descricao">
+                    <h2>Marta — Fullart</h2>
+                    <p><strong>Tipo:</strong> Encomenda</p>
+                    <p><strong>Tempo médio:</strong> 5 a 7 dias</p>
+                </div>
             </div>
-
         </div>
 
-        
+
     </main>
     <footer>
         <p class="final">copyright© & 2025 by Senhorita M.</p>
