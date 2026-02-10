@@ -1,32 +1,30 @@
-// Pega a URL da página atual
-const currentPage = window.location.pathname.split("/").pop(); // pega só o nome do arquivo
-
-// Pega todos os links do menu
-const links = document.querySelectorAll(".nav-link");
-
-links.forEach(link => {
-  const linkPage = link.getAttribute("href");
-  if (linkPage === currentPage) {
-    link.classList.add("active"); // adiciona a classe active
-  } else {
-    link.classList.remove("active"); // remove caso não seja
-  }
-});
-
 document.addEventListener("DOMContentLoaded", () => {
-    let currentPage = window.location.pathname.split("/").pop();
 
-    if (currentPage === "") {
-        currentPage = "index.html";
-    }
+  /* ---------- MENU ATIVO ---------- */
+  let currentPage = window.location.pathname.split("/").pop();
+  if (currentPage === "") currentPage = "index.html";
 
-    document.querySelectorAll(".nav-link").forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === currentPage
+    );
+  });
+
+  /* ---------- MODAL DA GALERIA ---------- */
+  const imagens = document.querySelectorAll(".galeria img");
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  imagens.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
     });
+  });
+
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
 });
-
-
