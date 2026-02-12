@@ -32,6 +32,12 @@ body {
     flex-direction: column;
 }
 
+/* ---------- VALORES ---------- */
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* ---------- HEADER ---------- */
 header {
     position: fixed;
